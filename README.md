@@ -36,9 +36,8 @@ target.addEventListener('click', () => {
 ### Callback으로 데이터를 반환받는 방법
 code를 입력 받을 때 Python 함수인 callback()에 원하는 데이터를 넣으면 JS단에서 콜백으로 값을 확인할 수 있습니다.
 
-<br>
-<br>
-<br>
+---
+
 ## PythonShell Method
    ### constructor 
         @Param : 객체의 thiis, 객체의 이름, Brython에 추가적으로 사용할 라이브러리, 사전에 정의할 함수
