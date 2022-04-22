@@ -5,7 +5,7 @@ brython.js와 brython_stdlib.js는 필수적으로 로드가 되어 있어야 �
 
 ### Python을 실행할 수 있는 JS class
 
-Brython 라이브러리와 연계하여 python을 JS단에서 컴파일 될 수 있도록 하였습니다.
+Brython 라이브러리와 연계하여 python을 JS단에서 컴파일 할 수 있도록 하였습니다.
 
 ### Callback
 
@@ -35,3 +35,17 @@ target.addEventListener('click', () => {
 
 ### Callback으로 데이터를 반환받는 방법
 code를 입력 받을 때 Python 함수인 callback()에 원하는 데이터를 넣으면 JS단에서 콜백으로 값을 확인할 수 있습니다.
+
+## PythonShell Method
+   ### constructor 
+        @Param : 객체의 thiis, 객체의 이름, Brython에 추가적으로 사용할 라이브러리, 사전에 정의할 함수
+   ### run
+        @Param : Python Code, Return 받거나 코드 실행 후 작동할 Logic을 실행시킬 Callback
+   ### loadPy
+        @Param : File Object
+   ### setInterpreter
+        @Detail : Tab과 Ctrl + Enter Key Event 연결 
+        @Param : Html Element, Ctrl + Enter시 Retrun값을 받아올 Callback
+   ### getBrythonError
+        @Return : Error Object
+        @Detail : Error Callback 가공시 사용될 여지가 있는 Method
