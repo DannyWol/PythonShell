@@ -1,5 +1,8 @@
 # PythonShell (0.5)
 
+### 사전준비
+brython.js와 brython_stdlib.js는 필수적으로 로드가 되어 있어야 함.
+
 ### Python을 실행할 수 있는 JS class
 
 Brython 라이브러리와 연계하여 python을 JS단에서 컴파일 될 수 있도록 하였습니다.
