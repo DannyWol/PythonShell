@@ -2,7 +2,7 @@
 
 ### Python을 실행할 수 있는 JS class
 
-Brython 라이브러리와 연게하여 python을 JS단에서 컴파일 될 수 있도록 하였습니다.
+Brython 라이브러리와 연계하여 python을 JS단에서 컴파일 될 수 있도록 하였습니다.
 
 ### Callback
 
