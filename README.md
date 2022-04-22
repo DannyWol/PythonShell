@@ -12,7 +12,7 @@ Brython 내부의 javascript 라이브러리를 사용하여 해당 데이터를
 ### 사용법
 ```
 const Main = {
-    python = new PythonShell(this, 'Main');
+    python: new PythonShell(this, 'Main');
 
     runPython(code) {
     
