@@ -1,4 +1,3 @@
-
 /** PythonShell Version 0.5
  * */
 class PythonShell {
@@ -10,11 +9,6 @@ class PythonShell {
 	funcBind = '';
 	/* Brython 라이브러리 추가 */
 	importCode = '';
-	/* 사용자에게 입력 받을 Class 설정 객체*/
-	config = {
-		success: null, /* (Function) 성공 Callback */
-		error: null /* (Function) Error 핸들링을 위한 */
-	};
 
 	/** @Param : Object : 객체 this, String : 해당 객체 이름, String : Brython 라이브러리 / String : 사전에 정의할 함수 */
 	constructor(target, prefix, importCode, funcBind) {
@@ -40,7 +34,6 @@ class PythonShell {
 		if (pythonScript !== null) pythonScript.remove();
 
 		/* Callback에 사용할 변수 초기화 */
-
 		this.target.pyFlag = null;
 		this.target.pyError = null;
 		this.target.pySuccess = null;
@@ -123,7 +116,7 @@ class PythonShell {
 			/* Tab */
 			if (e.keyCode === 9) {
 				e.preventDefault();
-				e.target.value += '    ';
+				e.target.value += '  ';
 			}
 			/* Ctrl + Enter */
 			else if (e.ctrlKey && e.keyCode === 13) {
